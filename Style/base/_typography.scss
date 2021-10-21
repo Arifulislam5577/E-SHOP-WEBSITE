@@ -1,0 +1,36 @@
+.heading-primary {
+  font-size: 4rem;
+  text-transform: uppercase;
+  @include gradientColor;
+
+  &--main {
+    display: block;
+    animation: moveInLeft 500ms ease-in-out;
+  }
+
+  &--sub {
+    display: block;
+    animation: moveInBottom 500ms ease-in-out;
+    animation-fill-mode: backwards;
+  }
+}
+
+.paragraph {
+  color: $secondary;
+  font-size: 1.2rem;
+}
+
+.animated-paragraph {
+  animation: moveInRight 500ms ease;
+}
+
+.heading-secondary {
+  font-size: 3rem;
+  @include gradientColor;
+}
+
+.heading-tertiary {
+  color: $secondary;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}

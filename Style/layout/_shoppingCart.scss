@@ -1,0 +1,111 @@
+.shoppingCartList {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 35%;
+  height: 90vh;
+  box-shadow: 2px 3px 40px $primary-light-1;
+  padding: 2rem;
+  background: #fff;
+  overflow: auto;
+  transition: transform 0.4s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateX(100%);
+
+  &__shoppingCartElement {
+    display: flex;
+    box-shadow: 2px 3px 40px $primary-light-1;
+    padding: 2rem;
+    margin: 0.8rem 0rem;
+    align-items: center;
+    position: relative;
+  }
+
+  &__img {
+    height: 6rem;
+    width: 6rem;
+    background: $primary-light-1;
+  }
+
+  &__text-box {
+    margin-left: 1rem;
+    width: 50%;
+  }
+
+  &__text-box2 {
+    @include flexbox;
+  }
+
+  &__DecrementBtn,
+  &__incrementBtn {
+    padding: 0.1rem 0.8rem;
+    border-radius: 0;
+    border: none;
+    background: $primary-light-1;
+    cursor: pointer;
+  }
+
+  &__item {
+    font-size: 1.3rem;
+  }
+
+  &__delete {
+    i {
+      font-size: 1.3rem;
+      color: red;
+    }
+  }
+
+  // footer
+
+  &__footer {
+    background-color: $primary-light-1;
+    padding: 2rem;
+  }
+  &__total-box,
+  &__btn-group {
+    @include flexbox;
+  }
+  &__total {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: $secondary;
+  }
+}
+.showCart {
+  transform: translate(0);
+}
+
+#shoppingEl {
+  position: absolute;
+  top: -10px;
+  right: -8px;
+  color: $secondary;
+}
+
+#wishlistEl {
+  position: absolute;
+  top: -10px;
+  right: -8px;
+  color: $secondary;
+}
+
+@media (max-width: 65.62em) {
+  .shoppingCartList {
+    width: 40%;
+  }
+}
+
+@media (max-width: 59.57em) {
+  .shoppingCartList {
+    width: 60%;
+  }
+}
+
+@media (max-width: 30em) {
+  .shoppingCartList {
+    width: 100%;
+  }
+}

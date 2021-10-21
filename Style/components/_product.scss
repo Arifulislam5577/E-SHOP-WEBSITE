@@ -1,0 +1,42 @@
+.product {
+  box-shadow: 2px 3px 4rem $primary-light-1;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s;
+
+  &--img {
+    height: 15rem;
+    object-fit: cover;
+  }
+
+  &--title {
+    text-align: left;
+    text-transform: capitalize;
+  }
+
+  &--description {
+    text-align: left;
+  }
+  &--box {
+    @include flexbox;
+  }
+
+  &--price {
+    font-size: 2rem;
+  }
+
+  &--btn-group {
+    text-align: left;
+    @include flexbox;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &--icon {
+    color: $color-gold;
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+}

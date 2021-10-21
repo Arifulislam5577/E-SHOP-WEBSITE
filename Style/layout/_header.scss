@@ -1,0 +1,46 @@
+.header {
+  width: 100%;
+  padding: 1.5rem 0rem;
+  @include border-bottom;
+  position: relative;
+
+  &__logo {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: $secondary;
+    font-weight: 900;
+    cursor: pointer;
+    @include gradientColor;
+  }
+
+  &__container {
+    @include flexbox;
+  }
+
+  &__list {
+    @include flexbox;
+  }
+
+  &__navbar {
+    width: 7rem;
+  }
+
+  &__link {
+    font-size: 1.4rem;
+    display: inline-block;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    position: relative;
+    @include gradientColor;
+  }
+}
+
+.header.sticky {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.95);
+  transition: all 0.4s ease-in;
+  z-index: 999;
+}

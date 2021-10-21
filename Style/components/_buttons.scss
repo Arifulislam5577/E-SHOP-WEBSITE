@@ -1,0 +1,58 @@
+.btn-primary:link,
+.btn-primary:visited {
+  font-size: 1.4rem;
+  padding: 0.7rem 4rem;
+  color: $primary-light;
+  background-image: linear-gradient(to left, $secondary, $primary);
+  transition: all 0.4s;
+  border-radius: 0.3rem;
+  animation: moveInBtn 500ms ease 500ms;
+  animation-fill-mode: backwards;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  background-image: linear-gradient(to right, $secondary, $primary);
+  transform: scale(1.05);
+}
+
+.btn-secondary:link,
+.btn-secondary:visited {
+  font-size: 1.2rem;
+  padding: 0.5rem 3rem;
+  color: #fff;
+  border-radius: 0.3rem;
+  background-image: linear-gradient(to right, $secondary, $primary);
+}
+
+.btn-secondary:hover {
+  background-image: linear-gradient(to left, $secondary, $primary);
+}
+
+.btn-tertiary:link,
+.btn-tertiary:visited {
+  font-size: 1rem;
+  padding: 0.5rem 2rem;
+  color: #fff;
+  border-radius: 0.3rem;
+  background-color: $secondary;
+}
+
+.btn-tertiary:hover {
+  background-color: $primary;
+}
+
+.btn-clear,
+.btn-checkout {
+  font-size: 1.4rem;
+  padding: 0.5rem 3rem;
+  color: $primary-light;
+  background-color: $secondary;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: $primary;
+  }
+}

@@ -1,0 +1,20 @@
+@mixin flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin gradientColor {
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  color: transparent;
+  background-image: linear-gradient(to left, $secondary, $primary);
+}
+
+@mixin border-bottom {
+  border-bottom: 1px solid $primary-light-1;
+}
+@mixin sectionPadding {
+  padding: 5rem 0rem;
+}
